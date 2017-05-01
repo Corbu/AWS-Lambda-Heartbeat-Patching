@@ -41,8 +41,10 @@ included sample code for that section already.  Some things to note:
 request pushes to AWS.
 * The servername/hostname in PatchCluster() and setPatching() are strings and 
 as such should be encapsulated in quotes
-* The patching date follows YEAR, MONTH, DAY format and are ints and should NOT 
-be enscapsulated by any quotes
+* The patching date follows WEEK OF THE MONTH (1 - 4), DAY OF THE WEEK (0 - 6) 
+(starting on MONDAY) format and are ints and should NOT be enscapsulated by any 
+quotes.  I know that's kind of confusing because DOTW starts both on Monday and 
+with 0 but that's just the way it is.
 
 The actual email that is sent is defined in the class.  I have tried to make it 
 as generic as possible but you may need to edit it.  I am hoping to make this 
